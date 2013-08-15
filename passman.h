@@ -55,7 +55,9 @@ if( strcmp(site,usr_site)==0)
 	
 	sprintf(comm,"echo \"%s\" | xsel -b -i ",pass);
 	system(comm);
-	getch();
+	puts("Paste password on password field within 10 second\n");
+	sleep(10);
+	sprintf(comm,"echo \"%s\" | xsel -b -i ","Osac-password manger");
 	return 1;
 	}
 else 
